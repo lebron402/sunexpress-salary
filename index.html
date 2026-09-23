@@ -70,7 +70,7 @@ let bob=parseFloat(document.getElementById('bob').value)||0;
 let otd=parseFloat(document.getElementById('otd').value)||0;
 let rate=parseFloat(document.getElementById('rate').value)||63.75;
 
-let normal=Math.max(Math.min(duty,100)-night,0)*2.75;
+let normal=Math.min(duty,100)*2.75;
 let overtime=Math.max(duty-100,0)*7.15;
 let nightPay=night*17.82;
 let yatiPay=yati*30;
